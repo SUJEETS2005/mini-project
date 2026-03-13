@@ -8,6 +8,7 @@ ax.set_ylabel("Users (Millions)")
 ax.set_title("Internet Users Growth Over Years")
 ax.legend()
 ax.grid()
+plt.savefig("graph1.png")
 plt.show()
 
 months=[1,2,3,4,5]
@@ -19,6 +20,7 @@ ax.plot(months,app2,label="App B")
 ax.set_title("App Download Comparison")
 ax.legend()
 ax.grid()
+plt.savefig("graph2.png")
 plt.show()
 
 practice=[1,2,3,4,5]
@@ -29,6 +31,7 @@ ax.set_xlabel("Practice Hours")
 ax.set_ylabel("Skill Score")
 ax.set_title("Coding Practice vs Skill")
 ax.legend()
+plt.savefig("graph3.png")
 plt.show()
 
 departments=["CSE","ECE","MECH"]
@@ -38,6 +41,7 @@ ax.bar(departments,placements,label="Placements")
 ax.set_title("Department Placement Count")
 ax.set_ylabel("Students Placed")
 ax.legend()
+plt.savefig("graph4.png")
 plt.show()
 
 prices=[40000,45000,50000,55000,60000,42000,48000,52000,58000]
@@ -47,6 +51,7 @@ ax.set_title("Laptop Price Distribution")
 ax.set_xlabel("Price")
 ax.set_ylabel("Frequency")
 ax.legend()
+plt.savefig("graph5.png")
 plt.show()
 
 brands=["Samsung","Apple","Xiaomi","OnePlus"]
@@ -54,6 +59,7 @@ share=[35,30,20,15]
 fig, ax = plt.subplots()
 ax.pie(share,labels=brands,autopct='%1.1f%%')
 ax.set_title("Smartphone Market Share")
+plt.savefig("graph6.png")
 plt.show()
 
 fig, ax = plt.subplots(1,2)
@@ -65,6 +71,7 @@ ax[0].legend()
 ax[1].scatter(days,temperature,label="Temp Data")
 ax[1].set_title("Temperature Scatter")
 ax[1].legend()
+plt.savefig("graph7.png")
 plt.show()
 
 fig, ax = plt.subplots(1,3,figsize=(12,4))
@@ -94,4 +101,5 @@ ax[1].set_title("Store 2 Sales")
 ax[1].legend()
 ax[1].grid()
 plt.tight_layout()
+plt.savefig("graph8.png")
 plt.show()
