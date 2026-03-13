@@ -15,7 +15,6 @@ plt.annotate(
     xytext=(6,60),
     arrowprops=dict(facecolor="grey")
 )
-
 plt.xlabel("X Axis Values")
 plt.ylabel("Y Axis Values")
 plt.title("Sample Matplotlib Graph")
